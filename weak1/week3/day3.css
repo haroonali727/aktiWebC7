@@ -1,0 +1,50 @@
+.transformStyles{
+    background-color: red;
+    width: 400px;
+    margin-left: 200px;
+    /* transition: width; */
+}
+
+.transformStyles:hover{
+    background-color: green;
+    color: yellow;
+    cursor: pointer;
+    transition: width;
+    /* css transfoorms */
+    /* transform: translateY(34px); */
+    /* transform: rotateZ(90deg); */
+    width: 600px;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animStyles{
+    background: green;
+    width: 400px;
+}
+.animStyles{
+    /* animation: randomAnimation duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: randomAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    /* animation-direction: alternate-reverse; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes randomAnimation {
+    0%{
+        background-color: red;
+    }
+    10%{
+        transform: scaleX(10deg);
+    }
+    20%{
+        transform: rotateZ(45deg);
+    }
+    30%{
+        transform: rotateZ(90deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
